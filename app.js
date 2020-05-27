@@ -16,7 +16,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const port = process.argv.slice(2)[0];
+const port = process.argv.slice(2)[0] || 80;
 const app = express();
 app.use(bodyParser.json());
 
@@ -39,4 +39,4 @@ app.get('/products/:pid/devices/:serial/activate', (req, res) => {
 
 console.log(`UbiBot service listening on port ${port}`);
 console.log(`Service url example: http://localhost:${port}/products/ubibot-ws1-cn/devices/AAAAAAWS1/activate`);
-app.listen(port);
+app.listen(port || 80);
