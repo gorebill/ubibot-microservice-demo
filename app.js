@@ -39,4 +39,4 @@ app.get('/products/:pid/devices/:serial/activate', (req, res) => {
 
 console.log(`UbiBot service listening on port ${port}`);
 console.log(`Service url example: http://localhost:${port}/products/ubibot-ws1-cn/devices/AAAAAAWS1/activate`);
-app.listen(port || 80);
+app.listen(port);
