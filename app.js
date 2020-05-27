@@ -24,11 +24,11 @@ const result = {
     "result": "success",
     "server_time": "2020-05-27T13:08:42Z",
     "channel": {
-        "channel_id": "301",
-        "name": "C-9271",
+        "channel_id": "999",
+        "name": "C-0001",
         "metadata": "{\"fn_dp\":600,\"fn_th\":60,\"fn_light\":60,\"fn_acc_act\":1,\"thres_acc_min\":5,\"fn_acc_tap1\":1,\"fn_acc_tap2\":1,\"fn_ext_t\":300,\"fn_battery\":3600}",
-        "user_id": "A874A453-87B0-482D-B8C5-EC45FC1B53D0",
-        "write_key": "e1b3f328a5785ff5bea73fed2fbb0bdb",
+        "user_id": "A0000000-87B0-482D-B8C5-EC45FC1B53D0",
+        "write_key": "aaaaa328a5785ff5bea73fed2fbb0bdb",
     }
 };
 
@@ -38,5 +38,5 @@ app.get('/products/:pid/devices/:serial/activate', (req, res) => {
 });
 
 console.log(`UbiBot service listening on port ${port}`);
-console.log(`Service url example: http://localhost:${port}/products/ubibot-ws1-cn/devices/3VH397WS1/activate`);
+console.log(`Service url example: http://localhost:${port}/products/ubibot-ws1-cn/devices/AAAAAAWS1/activate`);
 app.listen(port);
